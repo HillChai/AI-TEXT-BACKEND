@@ -11,8 +11,8 @@ class User(Base):
     user_type = Column(String, default="user")  # 'user' or 'admin'
     status = Column(String, default="active")  # 'active', 'blacklisted'
     model_quota = Column(Integer, default=0)
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=datetime.now)
+    updated_at = Column(DateTime, default=datetime.now)
 
     questions = relationship("Question", back_populates="user")
     prompts = relationship("Prompt", back_populates="user")
