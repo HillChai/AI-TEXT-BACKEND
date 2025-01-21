@@ -390,3 +390,45 @@ WHERE questions_and_answers.user_id = %(user_id_1)s AND questions_and_answers.qu
 问题是：
 
 2025-01-21 09:27:13,979 - my_logger - INFO - question_content: 你是综合行政执法局执法人员，在执法过程中发现王某乱搭乱建，要对他进行处罚，此时，王某年迈的母亲突然跪下来求情，一旁的群众也纷纷围观，还拿出手机拍到了网上，你怎么处理。
+2025-01-21 09:37:10,180 - my_logger - INFO - Login attempt for user: 
+2025-01-21 09:37:10,250 - my_logger - WARNING - Failed login attempt for user: 
+2025-01-21 09:41:02,031 - my_logger - INFO - Login attempt for user: 
+2025-01-21 09:41:02,059 - my_logger - WARNING - Failed login attempt for user: 
+2025-01-21 09:41:02,841 - my_logger - INFO - Login attempt for user: 
+2025-01-21 09:41:02,846 - my_logger - WARNING - Failed login attempt for user: 
+2025-01-21 09:41:03,337 - my_logger - INFO - Login attempt for user: 
+2025-01-21 09:41:03,341 - my_logger - WARNING - Failed login attempt for user: 
+2025-01-21 09:41:17,107 - my_logger - INFO - Login attempt for user: 
+2025-01-21 09:41:17,122 - my_logger - WARNING - Failed login attempt for user: 
+2025-01-21 09:47:37,103 - my_logger - INFO - Login attempt for user: 
+2025-01-21 09:47:37,184 - my_logger - WARNING - Failed login attempt for user: 
+2025-01-21 09:50:23,045 - my_logger - INFO - current user: 8
+2025-01-21 09:50:23,050 - my_logger - INFO - 检查是否有缓存
+2025-01-21 09:50:23,068 - my_logger - INFO - 没有记录
+2025-01-21 09:50:23,076 - my_logger - INFO - prompt_content: 
+请根据以下结构回答问题：
+1. 简要回应问题，明确目标和原则。
+2. 详细展开行动方案，每个要点不超过 3 行，逻辑清晰，层次分明。
+3. 引用相关政策或讲话作为支持性论据，不要显得刻意。
+4. 使用朴实流畅的语言，控制答案在 250-300 字范围内，时长约 3 分钟。
+问题是：
+
+2025-01-21 09:50:23,077 - my_logger - INFO - question_content: 75岁的詹大爷一个人居住在车库里，以捡废品为生。但是，詹大爷经常把捡来的废品放在消防通道里，阻碍小区居民的日常通行，也会有噪声和异味发出。一日，詹大爷又把废品放在消防通道里，并因此与其他居民起了争执。如果你是社区工作人员，你会怎么做？请现场模拟。
+2025-01-21 09:51:10,484 - my_logger - INFO - Login attempt for user: 
+2025-01-21 09:51:10,507 - my_logger - WARNING - Failed login attempt for user: 
+2025-01-21 09:52:38,533 - my_logger - INFO - Login attempt for user: 
+2025-01-21 09:52:38,597 - my_logger - WARNING - Failed login attempt for user: 
+2025-01-21 09:55:23,739 - my_logger - INFO - Login attempt for user: 
+2025-01-21 09:55:23,805 - my_logger - WARNING - Failed login attempt for user: 
+2025-01-21 09:59:21,410 - my_logger - INFO - Form data received: FormData([])
+2025-01-21 09:59:21,414 - my_logger - WARNING - Username or password not provided.
+2025-01-21 09:59:28,015 - my_logger - INFO - Form data received: FormData([])
+2025-01-21 09:59:28,017 - my_logger - WARNING - Username or password not provided.
+2025-01-21 10:12:32,463 - my_logger - INFO - FastAPI application started!
+2025-01-21 10:12:32,464 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 10:18:47,732 - my_logger - INFO - FastAPI application started!
+2025-01-21 10:18:47,733 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 10:19:42,774 - my_logger - INFO - FastAPI application started!
+2025-01-21 10:19:42,774 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 10:30:13,739 - my_logger - INFO - FastAPI application started!
+2025-01-21 10:30:13,741 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin

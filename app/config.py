@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     jwt_algorithm: str
     max_devices: int = 3
     redis_url: str
+    ADMIN_KEY: str
     
     class Config:
         env_file = ".env"

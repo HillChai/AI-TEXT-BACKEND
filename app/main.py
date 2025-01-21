@@ -4,8 +4,8 @@ from fastapi.responses import JSONResponse
 from fastapi.exceptions import RequestValidationError
 from routes import gpt_routes, prompt_routes, question_routes, user_routes
 from mylogger import logger
-from config import settings  # 配置文件
 from admin import create_admin
+from fastapi.staticfiles import StaticFiles
 
 # 初始化 FastAPI 应用
 app = FastAPI()
@@ -36,6 +36,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# 打印启动日志
+logger.info("FastAPI application started!")
+logger.info("Access admin panel at: http://127.0.0.1:8000/admin")
 
 # 根路由
 @app.get("/")

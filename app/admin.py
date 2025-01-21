@@ -4,37 +4,39 @@ from fastapi import Request, HTTPException
 from models import User, Prompt  # 修改为实际的模型导入路径
 from database import engine
 from fastapi import FastAPI
-from crud.user import get_user_by_username, verify_password
-from mylogger import logger
-from database import async_session_maker, engine  # 使用异步会话工厂
+from config import settings
 
 class AdminAuth(AuthenticationBackend):
     async def login(self, request: Request) -> bool:
         form = await request.form()
-        username = form.get("username", "")
-        password = form.get("password", "")
+        username, password = form["username"], form["password"]
 
-        # 日志记录
-        logger.info(f"Login attempt for user: {username}")
+        # Validate username/password credentials
+        # And update session
+        request.session.update({"token": "..."})
 
-        # 从数据库验证用户
-        async with async_session_maker() as session:  # 使用异步会话
-            db_user = await get_user_by_username(session, username)
+        return True
 
-            # 检查用户是否存在、密码是否正确以及是否为管理员
-            if db_user and verify_password(password, db_user.password_hash):
-                if db_user.user_type == "admin":  # 检查是否为管理员
-                    logger.info(f"Admin user {username} logged in successfully.")
-                    return True
+    async def logout(self, request: Request) -> bool:
+        # Usually you'd want to just clear the session
+        request.session.clear()
+        return True
 
-        logger.warning(f"Failed login attempt for user: {username}")
-        raise HTTPException(status_code=401, detail="Invalid credentials or not authorized")
+    async def authenticate(self, request: Request) -> bool:
+        token = request.session.get("token")
+
+        if not token:
+            return False
+
+        # Check the token in depth
+        return True
 
 
 # 初始化管理面板
 def create_admin(app: FastAPI):
-    auth_backend = AdminAuth(secret_key="your_secret_key")  # 替换为实际的 secret key
+    auth_backend = AdminAuth(secret_key=settings.ADMIN_KEY)  # 替换为实际的 secret key
     admin = Admin(app, engine, authentication_backend=auth_backend)
+    # admin = Admin(app, engine)
 
     # 定义模型视图
     class UserAdmin(ModelView, model=User):
