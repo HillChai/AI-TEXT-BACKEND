@@ -3,23 +3,24 @@ from jose import jwt
 from config import settings
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
-from sqlalchemy.orm import Session
+from sqlalchemy.ext.asyncio import AsyncSession
 from database import get_db, redis_client
 from crud.user import get_user_by_id
 
+
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
 
-def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
+async def get_current_user(token: str = Depends(oauth2_scheme), db: AsyncSession = Depends(get_db)):
     payload = decode_jwt(token)
     user_id = payload.get("sub")
     if not user_id:
         raise HTTPException(status_code=401, detail="无效的 Token")
     
     # 检查 Token 是否在设备列表中
-    if not is_token_valid_for_user(user_id, token):
+    if not await is_token_valid_for_user(user_id, token):
         raise HTTPException(status_code=401, detail="Token 已失效或被移除")
     
-    user = get_user_by_id(db, user_id)
+    user = await get_user_by_id(db, user_id)
     if not user:
         raise HTTPException(status_code=404, detail="用户不存在")
     
@@ -40,16 +41,15 @@ def decode_jwt(token: str):
     except jwt.JWTError:
         return None
 
-def add_to_blacklist(jti: str, expiration: int):
+async def add_to_blacklist(jti: str, expiration: int):
     """将 JWT 加入黑名单"""
-    redis_client.setex(f"blacklist:{jti}", expiration, "blacklisted")
+    await redis_client.setex(f"blacklist:{jti}", expiration, "blacklisted")
 
-def is_blacklisted(jti: str) -> bool:
+async def is_blacklisted(jti: str) -> bool:
     """检查 JWT 是否在黑名单中"""
-    return redis_client.exists(f"blacklist:{jti}")
+    return await redis_client.exists(f"blacklist:{jti}")
 
-
-def add_token_to_device_list(user_id: int, token: str, max_devices: int = 3):
+async def add_token_to_device_list(user_id: int, token: str, max_devices: int = 3):
     """
     将用户的 Token 添加到 Redis 的设备列表中，限制最大登录设备数量。
     :param user_id: 用户 ID
@@ -60,15 +60,15 @@ def add_token_to_device_list(user_id: int, token: str, max_devices: int = 3):
     redis_key = f"devices:{user_id}"
     
     # 将 Token 添加到列表
-    redis_client.lpush(redis_key, token)
+    await redis_client.lpush(redis_key, token)
     
     # 限制设备数量
-    redis_client.ltrim(redis_key, 0, max_devices - 1)  # 保留最新的 max_devices 个 Token
+    await redis_client.ltrim(redis_key, 0, max_devices - 1)  # 保留最新的 max_devices 个 Token
 
     # 设置过期时间，确保 Token 与 JWT 的有效期一致
-    redis_client.expire(redis_key, settings.jwt_expiration_minutes * 60)
+    await redis_client.expire(redis_key, settings.jwt_expiration_minutes * 60)
 
-def is_token_valid_for_user(user_id: int, token: str) -> bool:
+async def is_token_valid_for_user(user_id: int, token: str) -> bool:
     """
     检查某个 Token 是否在用户的设备列表中。
     :param user_id: 用户 ID
@@ -76,5 +76,5 @@ def is_token_valid_for_user(user_id: int, token: str) -> bool:
     :return: True 如果 Token 在设备列表中，否则 False
     """
     redis_key = f"devices:{user_id}"
-    tokens = redis_client.lrange(redis_key, 0, -1)
+    tokens = await redis_client.lrange(redis_key, 0, -1)
     return token in tokens

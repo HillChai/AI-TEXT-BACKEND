@@ -5,7 +5,7 @@ from sqlalchemy import pool
 
 from alembic import context
 
-from database import Base, engine
+from database import Base
 from models import *  # 确保导入所有模型
 
 # this is the Alembic Config object, which provides

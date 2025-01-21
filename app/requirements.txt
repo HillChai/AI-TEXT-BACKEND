@@ -3,7 +3,6 @@ uvicorn
 sqlalchemy
 pydantic
 openai
-psycopg2-binary
 alembic
 python-dotenv
 pydantic-settings
@@ -11,3 +10,7 @@ python-jose
 redis
 passlib==1.7.4
 bcrypt==3.2.0
+sqladmin 
+asyncpg
+aioredis
+itsdangerous

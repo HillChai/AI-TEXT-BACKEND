@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, Depends
-from sqlalchemy.orm import Session
+from sqlalchemy.ext.asyncio import AsyncSession
 from pydantic import BaseModel
 from database import get_db
 from mylogger import logger
@@ -26,8 +26,8 @@ class GPTRequest(BaseModel):
 
 @router.post("/", summary="处理 GPT 请求")
 async def handle_gpt_request(
-    request: GPTRequest,  # 使用 Pydantic 模型接收请求
-    db: Session = Depends(get_db)
+    request: GPTRequest,
+    db: AsyncSession = Depends(get_db)
 ):
     """
     处理 GPT 请求
@@ -36,12 +36,12 @@ async def handle_gpt_request(
     prompt_id = request.prompt_id
     user_id = request.user_id
 
-    logger.info(f"current user:{user_id}")
+    logger.info(f"current user: {user_id}")
 
     # 检查是否有缓存记录
     try:
         logger.info("检查是否有缓存")
-        existing_record = get_existing_answer(db, question_content, prompt_id, user_id)
+        existing_record = await get_existing_answer(db, question_content, prompt_id, user_id)
     except Exception as db_error:
         logger.error(f"Database query failed: {db_error}")
         raise HTTPException(status_code=500, detail="Database query error")
@@ -55,7 +55,10 @@ async def handle_gpt_request(
 
     # 调用大模型 API
     try:
-        prompt = get_prompt_by_id(db, prompt_id)
+        prompt = await get_prompt_by_id(db, prompt_id)
+        if not prompt:
+            raise HTTPException(status_code=404, detail="Prompt not found")
+
         logger.info(f"prompt_content: {prompt.content}")
         logger.info(f"question_content: {question_content}")
         response = client.chat.completions.create(
@@ -74,7 +77,7 @@ async def handle_gpt_request(
 
     # 保存结果到数据库
     try:
-        new_record = create_call_record(
+        new_record = await create_call_record(
             db,
             user_id=user_id,
             question_content=question_content,

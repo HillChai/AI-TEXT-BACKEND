@@ -5,9 +5,13 @@ from fastapi.exceptions import RequestValidationError
 from routes import gpt_routes, prompt_routes, question_routes, user_routes
 from mylogger import logger
 from config import settings  # 配置文件
+from admin import create_admin
 
 # 初始化 FastAPI 应用
 app = FastAPI()
+
+# 配置管理面板
+create_admin(app)
 
 # 注册路由
 app.include_router(user_routes.router, prefix="/auth", tags=["Authentication"])
