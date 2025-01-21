@@ -11,6 +11,7 @@ class User(Base):
     user_type = Column(String, default="user")  # 'user' or 'admin'
     status = Column(String, default="active")  # 'active', 'blacklisted'
     model_quota = Column(Integer, default=0)
+    membership_type = Column(String, default="basic")  # 'basic', 'premium'
     created_at = Column(DateTime, default=datetime.now)
     updated_at = Column(DateTime, default=datetime.now)
 

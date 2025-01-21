@@ -374,3 +374,4 @@ WHERE questions_and_answers.user_id = %(user_id_1)s AND questions_and_answers.qu
 2025-01-21 05:02:30,211 - my_logger - INFO - current user:8
 2025-01-21 05:02:30,213 - my_logger - INFO - 检查是否有缓存
 2025-01-21 05:02:30,216 - my_logger - INFO - 找到记录: <models.Question object at 0xffff982a8730>
+2025-01-21 06:00:58,996 - my_logger - ERROR - 请求校验失败: [{'type': 'int_parsing', 'loc': ('query', 'user_id'), 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': '[object Object]'}]

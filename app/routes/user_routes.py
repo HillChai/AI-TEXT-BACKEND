@@ -57,8 +57,12 @@ def login(user: UserCreate, db: Session = Depends(get_db)):
     user_info = {
         "user_id": db_user.id,
         "username": db_user.username,
+        "user_type": db_user.user_type,
         "status": db_user.status,
         "model_quota": db_user.model_quota,
+        "membership_type": db_user.membership_type,
+        "created_at": db_user.created_at,
+        "updated_at": db_user.updated_at,
     }
 
     return {

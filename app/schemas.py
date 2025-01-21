@@ -9,6 +9,7 @@ class UserBase(BaseModel):
     user_type: Optional[str] = "user"  # 默认为普通用户
     status: Optional[str] = "active"  # 默认为活跃状态
     model_quota: Optional[int] = 0  # 调用模型的额度
+    membership_type: Optional[str] = 'basic'
 
 class UserCreate(UserBase):
     password: str  # 创建用户时需要提供密码
@@ -18,6 +19,7 @@ class UserUpdate(BaseModel):
     user_type: Optional[str]
     status: Optional[str]
     model_quota: Optional[int]
+    membership_type: Optional[str] = None
 
 class UserResponse(UserBase):
     id: int
