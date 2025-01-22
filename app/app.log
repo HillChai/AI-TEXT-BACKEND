@@ -780,3 +780,31 @@ WHERE questions_and_answers.user_id = %(user_id_1)s AND questions_and_answers.qu
 2025-01-22 04:52:19,189 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
 2025-01-22 05:01:13,863 - my_logger - INFO - FastAPI application started!
 2025-01-22 05:01:13,863 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 09:04:20,212 - my_logger - INFO - FastAPI application started!
+2025-01-22 09:04:20,213 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 09:16:54,595 - my_logger - INFO - FastAPI application started!
+2025-01-22 09:16:54,597 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 09:17:59,203 - my_logger - INFO - FastAPI application started!
+2025-01-22 09:17:59,204 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 09:17:59,205 - my_logger - INFO - APScheduler started.
+2025-01-22 09:17:59,205 - my_logger - INFO - Executing reset_model_quota task on startup.
+2025-01-22 09:23:39,620 - my_logger - INFO - FastAPI application started!
+2025-01-22 09:23:39,622 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 09:29:27,533 - my_logger - INFO - FastAPI application started!
+2025-01-22 09:29:27,535 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 09:36:12,004 - my_logger - INFO - FastAPI application started!
+2025-01-22 09:36:12,006 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 09:39:24,073 - my_logger - INFO - FastAPI application started!
+2025-01-22 09:39:24,074 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 09:52:14,673 - my_logger - INFO - FastAPI application started!
+2025-01-22 09:52:14,675 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 09:53:39,122 - my_logger - INFO - FastAPI application started!
+2025-01-22 09:53:39,123 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 09:55:18,746 - my_logger - INFO - FastAPI application started!
+2025-01-22 09:55:18,748 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 10:16:33,522 - my_logger - INFO - FastAPI application started!
+2025-01-22 10:16:33,524 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 10:19:21,397 - my_logger - INFO - FastAPI application started!
+2025-01-22 10:19:21,399 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 10:30:41,500 - my_logger - INFO - FastAPI application started!
+2025-01-22 10:30:41,501 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin

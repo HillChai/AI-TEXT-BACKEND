@@ -20,7 +20,7 @@ from utils import (
     add_to_blacklist,
     is_token_valid_for_user,
 )
-from database import get_db
+from database import get_db, get_delay, redis_client
 from config import settings
 from mylogger import logger
 
@@ -39,16 +39,34 @@ async def register(user: UserCreate, db: AsyncSession = Depends(get_db)):
 # 用户登录
 @router.post("/login", summary="用户登录")
 async def login(user: UserCreate, db: AsyncSession = Depends(get_db)):
+
+    # 检查 Redis 中的延迟
+    delay = await get_delay(user.username)
+    if delay > 0:
+        raise HTTPException(
+            status_code=429,
+            detail=f"登录尝试过多，请等待 {delay} 秒后再试"
+        )
+    
     db_user = await get_user_by_username(db, user.username)
 
     if not db_user:
+        # 增加尝试次数
+        await redis_client.incr(f"{user.username}:attempts")
+        await redis_client.expire(f"{user.username}:attempts", 300)  # 设置过期时间为5分钟
         raise HTTPException(status_code=400, detail="用户不存在")
 
     if not verify_password(user.password, db_user.password_hash):
+        # 增加尝试次数
+        await redis_client.incr(f"{user.username}:attempts")
+        await redis_client.expire(f"{user.username}:attempts", 300)  # 设置过期时间为5分钟
         raise HTTPException(status_code=400, detail="用户名或密码错误")
 
     if db_user.status == 'blacklisted':
         raise HTTPException(status_code=400, detail="该账号无法使用")
+
+    # 登录成功，清除 Redis 中的尝试记录
+    await redis_client.delete(f"{user.username}:attempts")
 
     token = create_jwt({"sub": db_user.id})
 
