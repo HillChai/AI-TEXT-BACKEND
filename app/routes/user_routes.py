@@ -22,6 +22,7 @@ from utils import (
 )
 from database import get_db
 from config import settings
+from mylogger import logger
 
 # 初始化 APIRouter
 router = APIRouter()
@@ -39,11 +40,15 @@ async def register(user: UserCreate, db: AsyncSession = Depends(get_db)):
 @router.post("/login", summary="用户登录")
 async def login(user: UserCreate, db: AsyncSession = Depends(get_db)):
     db_user = await get_user_by_username(db, user.username)
+
     if not db_user:
         raise HTTPException(status_code=400, detail="用户不存在")
 
     if not verify_password(user.password, db_user.password_hash):
         raise HTTPException(status_code=400, detail="用户名或密码错误")
+
+    if db_user.status == 'blacklisted':
+        raise HTTPException(status_code=400, detail="该账号无法使用")
 
     token = create_jwt({"sub": db_user.id})
 

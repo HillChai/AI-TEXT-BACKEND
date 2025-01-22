@@ -1,3 +1,4 @@
+from utils import get_current_user
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from pydantic import BaseModel
@@ -27,14 +28,15 @@ class GPTRequest(BaseModel):
 @router.post("/", summary="处理 GPT 请求")
 async def handle_gpt_request(
     request: GPTRequest,
-    db: AsyncSession = Depends(get_db)
+    db: AsyncSession = Depends(get_db),
+    current_user: dict = Depends(get_current_user)  # 添加 JWT 认证
 ):
     """
     处理 GPT 请求
     """
     question_content = request.question_content
     prompt_id = request.prompt_id
-    user_id = request.user_id
+    user_id = current_user.id
 
     logger.info(f"current user: {user_id}")
 

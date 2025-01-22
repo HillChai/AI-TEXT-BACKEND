@@ -28,10 +28,16 @@ async def validation_exception_handler(request, exc):
         content={"detail": "Invalid request format or missing fields"}
     )
 
+# 配置允许的来源
+origins = [
+    "http://localhost:5173",  # 前端开发环境的地址
+    "http://127.0.0.1:5173",  # 或其他需要的域名
+]
+
 # 添加跨域中间件
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # 替换为前端的真实地址
+    allow_origins=origins,  # 替换为前端的真实地址
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

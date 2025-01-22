@@ -6,13 +6,20 @@ from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.ext.asyncio import AsyncSession
 from database import get_db, redis_client
 from crud.user import get_user_by_id
-
+from mylogger import logger
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
 
 async def get_current_user(token: str = Depends(oauth2_scheme), db: AsyncSession = Depends(get_db)):
+    if not token:
+        raise HTTPException(status_code=401, detail="Missing token")
+
     payload = decode_jwt(token)
-    user_id = payload.get("sub")
+
+    if datetime.now() > datetime.fromtimestamp(payload["exp"]):
+        raise HTTPException(status_code=401, detail="Token expired")
+
+    user_id = int(payload.get("sub"))
     if not user_id:
         raise HTTPException(status_code=401, detail="无效的 Token")
     
@@ -29,6 +36,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme), db: AsyncSession
 def create_jwt(data: dict):
     """生成 JWT"""
     to_encode = data.copy()
+    to_encode["sub"] = str(data.get("sub"))  # 确保 sub 字段是字符串
     expire = datetime.now() + timedelta(minutes=settings.jwt_expiration_minutes)
     to_encode.update({"exp": expire})
     return jwt.encode(to_encode, settings.jwt_secret_key, algorithm=settings.jwt_algorithm)
@@ -37,10 +45,18 @@ def decode_jwt(token: str):
     """验证并解码 JWT"""
     try:
         payload = jwt.decode(token, settings.jwt_secret_key, algorithms=[settings.jwt_algorithm])
-        return payload if payload.get("exp") >= datetime.now().timestamp() else None
-    except jwt.JWTError:
+        # 检查 Token 是否过期
+        if payload.get("exp") and payload.get("exp") < datetime.now().timestamp():
+            logger.error("Token 已过期")
+            return None
+        return payload
+    except jwt.JWTError as e:
+        logger.error(f"JWT 解码错误: {str(e)}")
         return None
-
+    except Exception as e:
+        logger.error(f"其他解码错误: {str(e)}")
+        return None
+    
 async def add_to_blacklist(jti: str, expiration: int):
     """将 JWT 加入黑名单"""
     await redis_client.setex(f"blacklist:{jti}", expiration, "blacklisted")

@@ -432,3 +432,351 @@ WHERE questions_and_answers.user_id = %(user_id_1)s AND questions_and_answers.qu
 2025-01-21 10:19:42,774 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
 2025-01-21 10:30:13,739 - my_logger - INFO - FastAPI application started!
 2025-01-21 10:30:13,741 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 10:34:39,923 - my_logger - INFO - FastAPI application started!
+2025-01-21 10:34:39,927 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 13:25:37,870 - my_logger - INFO - FastAPI application started!
+2025-01-21 13:25:37,871 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 13:33:51,244 - my_logger - INFO - FastAPI application started!
+2025-01-21 13:33:51,245 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 13:58:17,985 - my_logger - INFO - FastAPI application started!
+2025-01-21 13:58:17,986 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:04:52,012 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:04:52,014 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:06:58,656 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:06:58,657 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:08:00,775 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:08:00,775 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:12:13,803 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:12:13,805 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:12:56,746 - my_logger - INFO - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MDU3Nn0.8504WX5MR-GH2vdLuoIpfTr2l082lD4hJc4RDXhaWqM
+2025-01-21 14:13:04,702 - my_logger - INFO - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MDU4NH0.3LmKxzKoukew-Y0dK29xibdmd_jUdimCHbdqCXH62gU
+2025-01-21 14:17:20,551 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:17:20,551 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:17:26,355 - my_logger - INFO - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MDg0Nn0.EhJ0ZaLYE57bESM5Lx_TX0bCBTXIpJXr7xPfkkq55YQ
+2025-01-21 14:19:35,138 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:19:35,139 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:19:47,710 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MDk4N30.Ks2AYNFrZNb4m2HHTPy6dGevVb7sLkaMeGzypPfcY0E
+2025-01-21 14:26:47,802 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:26:47,804 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:26:54,982 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MTQxNH0.KREY1nW8FE-cjHkNEJlEAQLb8QZPnuovV70E_hSCRgw
+2025-01-21 14:26:55,024 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MTQxNH0.KREY1nW8FE-cjHkNEJlEAQLb8QZPnuovV70E_hSCRgw
+2025-01-21 14:35:12,651 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:35:12,652 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:35:21,980 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MTkyMX0.UNQOUNY-cSr3mmveqInnAxgFRaYJ-bJ_G2WYNu5VV0U
+2025-01-21 14:35:22,024 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MTkyMX0.UNQOUNY-cSr3mmveqInnAxgFRaYJ-bJ_G2WYNu5VV0U
+2025-01-21 14:37:35,651 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MjA1NX0.FInOymdFW8kPYLc1a-NdNXk0lrps7u2-lhq8A5Ze_B0
+2025-01-21 14:37:35,701 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MjA1NX0.FInOymdFW8kPYLc1a-NdNXk0lrps7u2-lhq8A5Ze_B0
+2025-01-21 14:38:08,488 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MjA4OH0.eMC0fqmz8FBMvQOwufxk0dih5MDcLOwgygkmRKAjvNY
+2025-01-21 14:38:08,516 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MjA4OH0.eMC0fqmz8FBMvQOwufxk0dih5MDcLOwgygkmRKAjvNY
+2025-01-21 14:39:02,998 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MjE0Mn0.xw5gqy3lUaNfYD3G5s9ItSeae5k8RJbPZuEOl2sdQDU
+2025-01-21 14:39:03,022 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MjE0Mn0.xw5gqy3lUaNfYD3G5s9ItSeae5k8RJbPZuEOl2sdQDU
+2025-01-21 14:39:55,664 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:39:55,666 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:40:01,004 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MjIwMX0.hjo-2Maj2WwXgA6zXJeAa1UASFW2yQ_wxNeQOXKq3IM
+2025-01-21 14:40:01,039 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MjIwMX0.hjo-2Maj2WwXgA6zXJeAa1UASFW2yQ_wxNeQOXKq3IM
+2025-01-21 14:45:41,364 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:45:41,364 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:45:54,310 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MjU1NH0.YtcdVsQZ5hsy7tVMPoxuXd8fztnkQCGGn5JH2_Dv5nw
+2025-01-21 14:45:54,346 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MjU1NH0.YtcdVsQZ5hsy7tVMPoxuXd8fztnkQCGGn5JH2_Dv5nw
+2025-01-21 14:47:17,275 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:47:17,276 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:47:33,155 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:47:33,155 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:47:41,823 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MjY2MX0.kHsWyQOdQQHSo-Y-AL1Tx_S0RGm1I3PPTpKuiLsSia4
+2025-01-21 14:47:41,853 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MjY2MX0.kHsWyQOdQQHSo-Y-AL1Tx_S0RGm1I3PPTpKuiLsSia4
+2025-01-21 14:49:24,760 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:49:24,760 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:49:27,743 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MjY2MX0.kHsWyQOdQQHSo-Y-AL1Tx_S0RGm1I3PPTpKuiLsSia4
+2025-01-21 14:49:27,966 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MjY2MX0.kHsWyQOdQQHSo-Y-AL1Tx_S0RGm1I3PPTpKuiLsSia4
+2025-01-21 14:50:33,460 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:50:33,461 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:50:43,032 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mjg0M30.Fhoh6Bo7v_WFzitGr76Tbtm8fMc4ZEpzktbJh-3GB2g
+2025-01-21 14:50:43,057 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mjg0M30.Fhoh6Bo7v_WFzitGr76Tbtm8fMc4ZEpzktbJh-3GB2g
+2025-01-21 14:50:43,057 - my_logger - INFO - 在解码
+2025-01-21 14:53:05,194 - my_logger - INFO - FastAPI application started!
+2025-01-21 14:53:05,195 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 14:53:15,937 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mjk5NX0.k3EIxsJ_1ZbPODGElqq2ouiii1h2LYFgiw6sGAeOcdE
+2025-01-21 14:53:15,968 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mjk5NX0.k3EIxsJ_1ZbPODGElqq2ouiii1h2LYFgiw6sGAeOcdE
+2025-01-21 14:53:15,969 - my_logger - INFO - 在解码
+2025-01-21 14:53:15,969 - my_logger - INFO - 是这里报错的吗
+2025-01-21 14:57:18,633 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mjk5NX0.k3EIxsJ_1ZbPODGElqq2ouiii1h2LYFgiw6sGAeOcdE
+2025-01-21 14:57:18,638 - my_logger - INFO - 在解码
+2025-01-21 14:57:18,638 - my_logger - INFO - 是这里报错的吗
+2025-01-21 14:57:32,412 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mjk5NX0.k3EIxsJ_1ZbPODGElqq2ouiii1h2LYFgiw6sGAeOcdE
+2025-01-21 14:57:32,415 - my_logger - INFO - 在解码
+2025-01-21 14:57:32,415 - my_logger - INFO - 是这里报错的吗
+2025-01-21 14:57:46,349 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mjk5NX0.k3EIxsJ_1ZbPODGElqq2ouiii1h2LYFgiw6sGAeOcdE
+2025-01-21 14:57:46,351 - my_logger - INFO - 在解码
+2025-01-21 14:57:46,351 - my_logger - INFO - 是这里报错的吗
+2025-01-21 14:57:59,388 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mjk5NX0.k3EIxsJ_1ZbPODGElqq2ouiii1h2LYFgiw6sGAeOcdE
+2025-01-21 14:57:59,389 - my_logger - INFO - 在解码
+2025-01-21 14:57:59,390 - my_logger - INFO - 是这里报错的吗
+2025-01-21 15:01:00,946 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mjk5NX0.k3EIxsJ_1ZbPODGElqq2ouiii1h2LYFgiw6sGAeOcdE
+2025-01-21 15:01:00,950 - my_logger - INFO - 在解码
+2025-01-21 15:01:00,951 - my_logger - INFO - 是这里报错的吗
+2025-01-21 15:01:29,713 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mjk5NX0.k3EIxsJ_1ZbPODGElqq2ouiii1h2LYFgiw6sGAeOcdE
+2025-01-21 15:01:29,719 - my_logger - INFO - 在解码
+2025-01-21 15:01:29,720 - my_logger - INFO - 是这里报错的吗
+2025-01-21 15:02:08,553 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mjk5NX0.k3EIxsJ_1ZbPODGElqq2ouiii1h2LYFgiw6sGAeOcdE
+2025-01-21 15:02:08,555 - my_logger - INFO - 在解码
+2025-01-21 15:02:08,555 - my_logger - INFO - 是这里报错的吗
+2025-01-21 15:04:30,606 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mjk5NX0.k3EIxsJ_1ZbPODGElqq2ouiii1h2LYFgiw6sGAeOcdE
+2025-01-21 15:04:30,611 - my_logger - INFO - 在解码
+2025-01-21 15:04:30,611 - my_logger - INFO - 是这里报错的吗
+2025-01-21 15:05:07,029 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MzcwN30.uDg0-_lVRBDId-SPsD9lyqjV_qDvih7Gweg1n1yC37s
+2025-01-21 15:05:07,051 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3MzcwN30.uDg0-_lVRBDId-SPsD9lyqjV_qDvih7Gweg1n1yC37s
+2025-01-21 15:05:07,051 - my_logger - INFO - 在解码
+2025-01-21 15:05:07,052 - my_logger - INFO - 是这里报错的吗
+2025-01-21 15:07:43,848 - my_logger - INFO - FastAPI application started!
+2025-01-21 15:07:43,849 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 15:07:50,070 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mzg3MH0.kUXXAD-3PHgJiIjlEfKOQGmszpoh9Q5VGd1B_btkDQg
+2025-01-21 15:07:50,107 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mzg3MH0.kUXXAD-3PHgJiIjlEfKOQGmszpoh9Q5VGd1B_btkDQg
+2025-01-21 15:07:50,108 - my_logger - INFO - 在解码
+2025-01-21 15:07:50,108 - my_logger - INFO - 是这里报错的吗
+2025-01-21 15:07:50,112 - my_logger - INFO - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3Mzg3MH0.kUXXAD-3PHgJiIjlEfKOQGmszpoh9Q5VGd1B_btkDQg
+2025-01-21 15:07:50,118 - my_logger - INFO - settings.jwt_secret_key: Jr6r4pFcvNfft0H2aqJzeBGLVs2uSMdIOzGwPQtqRXA
+2025-01-21 15:07:50,120 - my_logger - INFO - settings.jwt_algorithm: HS256
+2025-01-21 15:11:05,040 - my_logger - INFO - FastAPI application started!
+2025-01-21 15:11:05,041 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 15:11:17,428 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3NDA3N30.w4UfqrAP-hnFFGXdtRZO3ZvN5qZDveZYP6Iij05SpRE
+2025-01-21 15:11:17,458 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3NDA3N30.w4UfqrAP-hnFFGXdtRZO3ZvN5qZDveZYP6Iij05SpRE
+2025-01-21 15:11:17,459 - my_logger - INFO - 在解码
+2025-01-21 15:11:17,460 - my_logger - INFO - 是这里报错的吗
+2025-01-21 15:11:17,463 - my_logger - INFO - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImV4cCI6MTczNzQ3NDA3N30.w4UfqrAP-hnFFGXdtRZO3ZvN5qZDveZYP6Iij05SpRE
+2025-01-21 15:11:17,463 - my_logger - INFO - settings.jwt_secret_key: Jr6r4pFcvNfft0H2aqJzeBGLVs2uSMdIOzGwPQtqRXA
+2025-01-21 15:11:17,464 - my_logger - INFO - settings.jwt_algorithm: HS256
+2025-01-21 15:11:17,470 - my_logger - ERROR - JWT 解码错误: Subject must be a string.
+2025-01-21 15:13:56,778 - my_logger - INFO - FastAPI application started!
+2025-01-21 15:13:56,780 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 15:14:03,875 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzM3NDc0MjQzfQ.ppTDsN25E4kjrq_qa-23IwicZhg90dBR1nzXRpnjXK4
+2025-01-21 15:14:03,918 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzM3NDc0MjQzfQ.ppTDsN25E4kjrq_qa-23IwicZhg90dBR1nzXRpnjXK4
+2025-01-21 15:14:03,921 - my_logger - INFO - 在解码
+2025-01-21 15:14:03,922 - my_logger - INFO - 是这里报错的吗
+2025-01-21 15:14:03,924 - my_logger - INFO - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzM3NDc0MjQzfQ.ppTDsN25E4kjrq_qa-23IwicZhg90dBR1nzXRpnjXK4
+2025-01-21 15:14:03,925 - my_logger - INFO - settings.jwt_secret_key: Jr6r4pFcvNfft0H2aqJzeBGLVs2uSMdIOzGwPQtqRXA
+2025-01-21 15:14:03,925 - my_logger - INFO - settings.jwt_algorithm: HS256
+2025-01-21 15:14:03,934 - my_logger - INFO - 不是上面报错
+2025-01-21 15:14:03,935 - my_logger - INFO - payload: {'sub': '8', 'exp': 1737474243}
+2025-01-21 15:18:06,808 - my_logger - INFO - FastAPI application started!
+2025-01-21 15:18:06,810 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 15:18:26,781 - my_logger - INFO - create token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzM3NDc0NTA2fQ.waJ3eMJv92ocGQ_Sk4690v7ZaFNX-S6KG7v8-h14V-s
+2025-01-21 15:18:26,822 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzM3NDc0NTA2fQ.waJ3eMJv92ocGQ_Sk4690v7ZaFNX-S6KG7v8-h14V-s
+2025-01-21 15:18:26,822 - my_logger - INFO - 在解码
+2025-01-21 15:18:26,822 - my_logger - INFO - 是这里报错的吗
+2025-01-21 15:18:26,823 - my_logger - INFO - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzM3NDc0NTA2fQ.waJ3eMJv92ocGQ_Sk4690v7ZaFNX-S6KG7v8-h14V-s
+2025-01-21 15:18:26,823 - my_logger - INFO - settings.jwt_secret_key: Jr6r4pFcvNfft0H2aqJzeBGLVs2uSMdIOzGwPQtqRXA
+2025-01-21 15:18:26,823 - my_logger - INFO - settings.jwt_algorithm: HS256
+2025-01-21 15:18:26,824 - my_logger - INFO - 不是上面报错
+2025-01-21 15:18:26,825 - my_logger - INFO - payload: {'sub': '8', 'exp': 1737474506}
+2025-01-21 15:20:31,758 - my_logger - INFO - FastAPI application started!
+2025-01-21 15:20:31,759 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 15:21:22,700 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzM3NDc0NjgyfQ.V3KYbOcYf2EYXvsOVPYd-iMOmjTdQYRyfPPXUpBfJdg
+2025-01-21 15:25:14,282 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzM3NDc0NjgyfQ.V3KYbOcYf2EYXvsOVPYd-iMOmjTdQYRyfPPXUpBfJdg
+2025-01-21 15:27:18,259 - my_logger - INFO - FastAPI application started!
+2025-01-21 15:27:18,259 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 15:27:25,456 - my_logger - INFO - receive token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzM3NDc0NjgyfQ.V3KYbOcYf2EYXvsOVPYd-iMOmjTdQYRyfPPXUpBfJdg
+2025-01-21 15:31:40,987 - my_logger - INFO - FastAPI application started!
+2025-01-21 15:31:40,989 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 15:31:48,469 - my_logger - INFO - 编码时的sub: 8
+2025-01-21 15:31:48,497 - my_logger - INFO - 解码后的user_id: 8
+2025-01-21 15:44:06,072 - my_logger - INFO - FastAPI application started!
+2025-01-21 15:44:06,073 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 15:48:59,293 - my_logger - INFO - FastAPI application started!
+2025-01-21 15:48:59,294 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 15:49:08,214 - my_logger - INFO - 所有记录:[<models.Question object at 0xffff8748be50>, <models.Question object at 0xffff8748beb0>, <models.Question object at 0xffff8748bee0>, <models.Question object at 0xffff8748bf10>, <models.Question object at 0xffff8748bf40>, <models.Question object at 0xffff8748bf70>, <models.Question object at 0xffff8748bfa0>, <models.Question object at 0xffff8748bfd0>, <models.Question object at 0xffff8748be80>, <models.Question object at 0xffff87490040>, <models.Question object at 0xffff874900a0>, <models.Question object at 0xffff87490100>, <models.Question object at 0xffff87490160>, <models.Question object at 0xffff874901c0>, <models.Question object at 0xffff87490220>, <models.Question object at 0xffff87490280>, <models.Question object at 0xffff874902e0>, <models.Question object at 0xffff87490340>, <models.Question object at 0xffff874903a0>, <models.Question object at 0xffff87490400>, <models.Question object at 0xffff87490460>, <models.Question object at 0xffff874904c0>, <models.Question object at 0xffff87490520>, <models.Question object at 0xffff87490580>, <models.Question object at 0xffff874905e0>, <models.Question object at 0xffff87490640>, <models.Question object at 0xffff874906a0>, <models.Question object at 0xffff87490700>, <models.Question object at 0xffff87490760>, <models.Question object at 0xffff874907c0>, <models.Question object at 0xffff87490820>, <models.Question object at 0xffff87490880>, <models.Question object at 0xffff874908e0>, <models.Question object at 0xffff87490940>]
+2025-01-21 15:50:15,173 - my_logger - INFO - FastAPI application started!
+2025-01-21 15:50:15,173 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 15:50:21,083 - my_logger - INFO - paginated_data:1
+2025-01-21 15:53:30,121 - my_logger - INFO - FastAPI application started!
+2025-01-21 15:53:30,122 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 15:53:43,449 - my_logger - INFO - grouped_list:23
+2025-01-21 15:53:43,452 - my_logger - INFO - start,end:7,8
+2025-01-21 15:53:43,452 - my_logger - INFO - paginated_data:1
+2025-01-21 15:58:23,865 - my_logger - INFO - FastAPI application started!
+2025-01-21 15:58:23,865 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 15:58:27,918 - my_logger - INFO - grouped_list:23
+2025-01-21 15:58:27,919 - my_logger - INFO - page,limit:8,1
+2025-01-21 15:58:27,919 - my_logger - INFO - start,end:7,8
+2025-01-21 15:58:27,919 - my_logger - INFO - paginated_data:1
+2025-01-21 16:01:21,693 - my_logger - INFO - FastAPI application started!
+2025-01-21 16:01:21,694 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 16:01:26,335 - my_logger - INFO - grouped_list:23
+2025-01-21 16:01:26,336 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:01:26,337 - my_logger - INFO - start,end:7,8
+2025-01-21 16:01:26,338 - my_logger - INFO - paginated_data:1
+2025-01-21 16:05:15,953 - my_logger - INFO - grouped_list:23
+2025-01-21 16:05:15,957 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:05:15,957 - my_logger - INFO - start,end:7,8
+2025-01-21 16:05:15,957 - my_logger - INFO - paginated_data:1
+2025-01-21 16:05:32,787 - my_logger - INFO - grouped_list:23
+2025-01-21 16:05:32,789 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:05:32,789 - my_logger - INFO - start,end:7,8
+2025-01-21 16:05:32,789 - my_logger - INFO - paginated_data:1
+2025-01-21 16:05:38,857 - my_logger - INFO - grouped_list:23
+2025-01-21 16:05:38,860 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:05:38,861 - my_logger - INFO - start,end:7,8
+2025-01-21 16:05:38,862 - my_logger - INFO - paginated_data:1
+2025-01-21 16:05:39,859 - my_logger - INFO - grouped_list:23
+2025-01-21 16:05:39,860 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:05:39,860 - my_logger - INFO - start,end:7,8
+2025-01-21 16:05:39,860 - my_logger - INFO - paginated_data:1
+2025-01-21 16:07:43,070 - my_logger - INFO - FastAPI application started!
+2025-01-21 16:07:43,072 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 16:07:45,838 - my_logger - INFO - grouped_list:23
+2025-01-21 16:07:45,859 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:07:45,863 - my_logger - INFO - start,end:0,10
+2025-01-21 16:07:45,880 - my_logger - INFO - paginated_data:10
+2025-01-21 16:07:45,998 - my_logger - INFO - grouped_list:23
+2025-01-21 16:07:45,999 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:07:45,999 - my_logger - INFO - start,end:0,10
+2025-01-21 16:07:46,000 - my_logger - INFO - paginated_data:10
+2025-01-21 16:07:59,611 - my_logger - INFO - grouped_list:23
+2025-01-21 16:07:59,615 - my_logger - INFO - page,limit:8,2
+2025-01-21 16:07:59,616 - my_logger - INFO - start,end:0,10
+2025-01-21 16:07:59,616 - my_logger - INFO - paginated_data:10
+2025-01-21 16:07:59,631 - my_logger - INFO - grouped_list:23
+2025-01-21 16:07:59,632 - my_logger - INFO - page,limit:8,2
+2025-01-21 16:07:59,632 - my_logger - INFO - start,end:0,10
+2025-01-21 16:07:59,632 - my_logger - INFO - paginated_data:10
+2025-01-21 16:08:01,223 - my_logger - INFO - grouped_list:23
+2025-01-21 16:08:01,224 - my_logger - INFO - page,limit:8,3
+2025-01-21 16:08:01,224 - my_logger - INFO - start,end:0,10
+2025-01-21 16:08:01,224 - my_logger - INFO - paginated_data:10
+2025-01-21 16:08:01,249 - my_logger - INFO - grouped_list:23
+2025-01-21 16:08:01,250 - my_logger - INFO - page,limit:8,3
+2025-01-21 16:08:01,250 - my_logger - INFO - start,end:0,10
+2025-01-21 16:08:01,250 - my_logger - INFO - paginated_data:10
+2025-01-21 16:08:02,500 - my_logger - INFO - grouped_list:23
+2025-01-21 16:08:02,501 - my_logger - INFO - page,limit:8,4
+2025-01-21 16:08:02,501 - my_logger - INFO - start,end:0,10
+2025-01-21 16:08:02,501 - my_logger - INFO - paginated_data:10
+2025-01-21 16:08:02,511 - my_logger - INFO - grouped_list:23
+2025-01-21 16:08:02,511 - my_logger - INFO - page,limit:8,4
+2025-01-21 16:08:02,511 - my_logger - INFO - start,end:0,10
+2025-01-21 16:08:02,511 - my_logger - INFO - paginated_data:10
+2025-01-21 16:08:03,616 - my_logger - INFO - grouped_list:23
+2025-01-21 16:08:03,617 - my_logger - INFO - page,limit:8,5
+2025-01-21 16:08:03,618 - my_logger - INFO - start,end:0,10
+2025-01-21 16:08:03,619 - my_logger - INFO - paginated_data:10
+2025-01-21 16:08:03,636 - my_logger - INFO - grouped_list:23
+2025-01-21 16:08:03,636 - my_logger - INFO - page,limit:8,5
+2025-01-21 16:08:03,636 - my_logger - INFO - start,end:0,10
+2025-01-21 16:08:03,636 - my_logger - INFO - paginated_data:10
+2025-01-21 16:08:04,684 - my_logger - INFO - grouped_list:23
+2025-01-21 16:08:04,684 - my_logger - INFO - page,limit:8,6
+2025-01-21 16:08:04,684 - my_logger - INFO - start,end:0,10
+2025-01-21 16:08:04,684 - my_logger - INFO - paginated_data:10
+2025-01-21 16:08:04,702 - my_logger - INFO - grouped_list:23
+2025-01-21 16:08:04,702 - my_logger - INFO - page,limit:8,6
+2025-01-21 16:08:04,703 - my_logger - INFO - start,end:0,10
+2025-01-21 16:08:04,703 - my_logger - INFO - paginated_data:10
+2025-01-21 16:09:06,580 - my_logger - INFO - FastAPI application started!
+2025-01-21 16:09:06,581 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 16:13:46,087 - my_logger - INFO - grouped_list:23
+2025-01-21 16:13:46,090 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:13:46,090 - my_logger - INFO - start,end:7,8
+2025-01-21 16:13:46,090 - my_logger - INFO - paginated_data:1
+2025-01-21 16:14:50,962 - my_logger - INFO - grouped_list:23
+2025-01-21 16:14:50,966 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:14:50,966 - my_logger - INFO - start,end:7,8
+2025-01-21 16:14:50,966 - my_logger - INFO - paginated_data:1
+2025-01-21 16:15:50,183 - my_logger - INFO - grouped_list:23
+2025-01-21 16:15:50,185 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:15:50,185 - my_logger - INFO - start,end:7,8
+2025-01-21 16:15:50,185 - my_logger - INFO - paginated_data:1
+2025-01-21 16:15:59,663 - my_logger - INFO - grouped_list:23
+2025-01-21 16:15:59,667 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:15:59,669 - my_logger - INFO - start,end:7,8
+2025-01-21 16:15:59,670 - my_logger - INFO - paginated_data:1
+2025-01-21 16:18:02,708 - my_logger - INFO - grouped_list:23
+2025-01-21 16:18:02,714 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:18:02,715 - my_logger - INFO - start,end:7,8
+2025-01-21 16:18:02,715 - my_logger - INFO - paginated_data:1
+2025-01-21 16:18:10,573 - my_logger - INFO - grouped_list:23
+2025-01-21 16:18:10,574 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:18:10,574 - my_logger - INFO - start,end:7,8
+2025-01-21 16:18:10,574 - my_logger - INFO - paginated_data:1
+2025-01-21 16:18:45,579 - my_logger - INFO - grouped_list:23
+2025-01-21 16:18:45,580 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:18:45,581 - my_logger - INFO - start,end:7,8
+2025-01-21 16:18:45,582 - my_logger - INFO - paginated_data:1
+2025-01-21 16:18:49,243 - my_logger - INFO - grouped_list:23
+2025-01-21 16:18:49,251 - my_logger - INFO - page,limit:8,1
+2025-01-21 16:18:49,251 - my_logger - INFO - start,end:7,8
+2025-01-21 16:18:49,251 - my_logger - INFO - paginated_data:1
+2025-01-21 16:19:52,564 - my_logger - INFO - grouped_list:23
+2025-01-21 16:19:52,569 - my_logger - INFO - page,limit:1,10
+2025-01-21 16:19:52,569 - my_logger - INFO - start,end:0,10
+2025-01-21 16:19:52,569 - my_logger - INFO - paginated_data:10
+2025-01-21 16:21:16,922 - my_logger - INFO - Received original_content: 为吸引青年人才来本地就业发展，某市打造多家青年驿站，为外地求职青年提供一周内免费住宿。为进一步提高青年驿站服务质量，团市委决定为入住者提供就业指导和城市融入等服务。假如由你负责，你怎么做？
+2025-01-21 16:21:20,055 - my_logger - INFO - grouped_list:23
+2025-01-21 16:21:20,055 - my_logger - INFO - page,limit:1,10
+2025-01-21 16:21:20,055 - my_logger - INFO - start,end:0,10
+2025-01-21 16:21:20,056 - my_logger - INFO - paginated_data:10
+2025-01-21 16:21:39,360 - my_logger - INFO - Received original_content: 75岁的詹大爷一个人居住在车库里，以捡废品为生。但是，詹大爷经常把捡来的废品放在消防通道里，阻碍小区居民的日常通行，也会有噪声和异味发出。一日，詹大爷又把废品放在消防通道里，并因此与其他居民起了争执。如果你是社区工作人员，你会怎么做？请现场模拟。
+2025-01-21 16:21:39,365 - my_logger - INFO - Found question: <models.Question object at 0xffff885d6d30>
+2025-01-21 16:21:41,008 - my_logger - INFO - grouped_list:23
+2025-01-21 16:21:41,008 - my_logger - INFO - page,limit:1,10
+2025-01-21 16:21:41,008 - my_logger - INFO - start,end:0,10
+2025-01-21 16:21:41,009 - my_logger - INFO - paginated_data:10
+2025-01-21 16:21:54,434 - my_logger - INFO - Received original_content: 1. 简要回应问题，明确目标和原则。
+作为社区工作人员，我的目标是保障居民的安全和生活质量，同时也要关心詹大爷的生活状况。我会秉持公平公正的原则，既要维护社区秩序，也要帮助詹大爷解决实际困难。
+
+2. 详细展开行动方案，每个要点不超过 3 行，逻辑清晰，层次分明。
+- 首先，我会立即赶到现场，安抚双方情绪，避免冲突升级。
+- 其次，我会与詹大爷沟通，了解他的生活状况和需求，并解释消防通道的重要性。
+- 然后，我会联系相关部门，为詹大爷寻找合适的废品存放点，并提供必要的生活援助。
+- 最后，我会组织社区居民会议，讨论如何共同维护社区环境，并建立长效机制。
+
+3. 引用相关政策或讲话作为支持性论据，不要显得刻意。
+正如习近平总书记所说，"要坚持以人民为中心的发展思想，不断保障和改善民生"。我们要在维护社区秩序的同时，也要关心弱势群体的生活，做到既严格管理，又充满温情。
+
+4. 使用朴实流畅的语言，控制答案在 250-300 字范围内，时长约 3 分钟。
+我会先赶到现场，安抚詹大爷和居民的情绪，避免事态扩大。然后与詹大爷深入交流，了解他的困难，并耐心解释消防通道的重要性。同时，我会联系相关部门，为詹大爷寻找合适的废品存放点，并帮助他申请必要的生活补助。最后，我会组织居民开会，共同商讨如何维护社区环境，建立长效机制。我们要在严格管理的同时，也要关心弱势群体，让社区既有秩序，又有温度。通过多方努力，我相信一定能找到既保障居民安全，又照顾詹大爷生活的解决方案。
+2025-01-21 16:21:54,438 - my_logger - INFO - Found question: <models.Question object at 0xffff885e3160>
+2025-01-21 16:21:56,229 - my_logger - INFO - grouped_list:23
+2025-01-21 16:21:56,229 - my_logger - INFO - page,limit:1,10
+2025-01-21 16:21:56,229 - my_logger - INFO - start,end:0,10
+2025-01-21 16:21:56,230 - my_logger - INFO - paginated_data:10
+2025-01-21 16:27:03,156 - my_logger - INFO - grouped_list:23
+2025-01-21 16:27:03,160 - my_logger - INFO - page,limit:1,10
+2025-01-21 16:27:03,160 - my_logger - INFO - start,end:0,10
+2025-01-21 16:27:03,163 - my_logger - INFO - paginated_data:10
+2025-01-21 16:28:49,781 - my_logger - INFO - grouped_list:23
+2025-01-21 16:28:49,785 - my_logger - INFO - page,limit:1,10
+2025-01-21 16:28:49,785 - my_logger - INFO - start,end:0,10
+2025-01-21 16:28:49,785 - my_logger - INFO - paginated_data:10
+2025-01-21 16:36:03,553 - my_logger - INFO - FastAPI application started!
+2025-01-21 16:36:03,555 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-21 16:36:09,572 - my_logger - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzM3NDc4NzI5fQ.4uJrk3SvIVv0BBikjr7_awiMRgQ5cApNTOXQ64JZw7U
+2025-01-21 16:36:09,677 - my_logger - INFO - grouped_list:23
+2025-01-21 16:36:09,677 - my_logger - INFO - page,limit:1,10
+2025-01-21 16:36:09,682 - my_logger - INFO - start,end:0,10
+2025-01-21 16:36:09,682 - my_logger - INFO - paginated_data:10
+2025-01-22 04:35:53,710 - my_logger - INFO - FastAPI application started!
+2025-01-22 04:35:53,714 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 04:39:50,614 - my_logger - ERROR - 请求校验失败: [{'type': 'missing', 'loc': ('body', 'user_id'), 'msg': 'Field required', 'input': {'question_content': '为吸引青年人才来本地就业发展，某市打造多家青年驿站，为外地求职青年提供一周内免费住宿。为进一步提高青年驿站服务质量，团市委决定为入住者提供就业指导和城市融入等服务。假如由你负责，你怎么做？', 'prompt_id': 1}}]
+2025-01-22 04:45:19,133 - my_logger - INFO - FastAPI application started!
+2025-01-22 04:45:19,134 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 04:47:06,174 - my_logger - INFO - FastAPI application started!
+2025-01-22 04:47:06,175 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 04:47:11,349 - my_logger - INFO - current user: 16
+2025-01-22 04:47:11,350 - my_logger - INFO - 检查是否有缓存
+2025-01-22 04:47:11,353 - my_logger - INFO - 没有记录
+2025-01-22 04:47:11,357 - my_logger - INFO - prompt_content: 
+请根据以下结构回答问题：
+1. 简要回应问题，明确目标和原则。
+2. 详细展开行动方案，每个要点不超过 3 行，逻辑清晰，层次分明。
+3. 引用相关政策或讲话作为支持性论据，不要显得刻意。
+4. 使用朴实流畅的语言，控制答案在 250-300 字范围内，时长约 3 分钟。
+问题是：
+
+2025-01-22 04:47:11,357 - my_logger - INFO - question_content: 为吸引青年人才来本地就业发展，某市打造多家青年驿站，为外地求职青年提供一周内免费住宿。为进一步提高青年驿站服务质量，团市委决定为入住者提供就业指导和城市融入等服务。假如由你负责，你怎么做？
+2025-01-22 04:47:18,284 - my_logger - ERROR - Failed to save record to database: 403: Insufficient model quota
+2025-01-22 04:47:56,253 - my_logger - INFO - current user: 8
+2025-01-22 04:47:56,255 - my_logger - INFO - 检查是否有缓存
+2025-01-22 04:47:56,257 - my_logger - INFO - 找到记录: <models.Question object at 0xffff7c8dab50>
+2025-01-22 04:52:19,188 - my_logger - INFO - FastAPI application started!
+2025-01-22 04:52:19,189 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-22 05:01:13,863 - my_logger - INFO - FastAPI application started!
+2025-01-22 05:01:13,863 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
