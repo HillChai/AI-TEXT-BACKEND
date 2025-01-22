@@ -1,6 +1,5 @@
 fastapi
 uvicorn
-sqlalchemy
 pydantic
 openai
 alembic
@@ -14,3 +13,5 @@ asyncpg
 aioredis
 itsdangerous
 apscheduler[asyncio]
+sqlalchemy[asyncio]
+psycopg2-binary

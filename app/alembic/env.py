@@ -4,18 +4,13 @@ from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 
 from alembic import context
-
-from database import Base
-from models import *  # 确保导入所有模型
-
+from models import Base  # 替换为实际路径
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
-# 配置 Alembic Config 对象，用于访问 .ini 文件中的配置
 config = context.config
 
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
-# 配置日志
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
@@ -23,7 +18,6 @@ if config.config_file_name is not None:
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-# 设置目标元数据（MetaData）以支持自动生成迁移
 target_metadata = Base.metadata
 
 # other values from the config, defined by the needs of env.py,

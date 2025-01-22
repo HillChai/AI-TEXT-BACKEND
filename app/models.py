@@ -41,3 +41,16 @@ class Prompt(Base):
 
     user = relationship("User", back_populates="prompts")
     questions = relationship("Question", back_populates="prompt")
+
+# 用户和 Prompt 的关联表
+class UserPrompt(Base):
+    __tablename__ = "user_prompts"
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    prompt_id = Column(Integer, ForeignKey("prompts.id"), nullable=False)
+    created_at = Column(DateTime, default=datetime.now)
+    updated_at = Column(DateTime, default=datetime.now)
+
+    # 可选：添加更多字段，比如状态、使用次数等
+    status = Column(String, default="active")  # 'active', 'archived'
+    usage_count = Column(Integer, default=0)
