@@ -1,3 +1,4 @@
+from crud.prompt import create_prompt, get_prompts_by_user
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 from datetime import datetime
@@ -10,7 +11,7 @@ from crud.user import (
     delete_user as crud_delete_user,
     verify_password,
 )
-from schemas import UserCreate, UserResponse, UserUpdate
+from schemas import PromptCreate, UserCreate, UserResponse, UserUpdate
 from utils import (
     create_jwt,
     add_token_to_device_list,
@@ -34,6 +35,24 @@ async def register(user: UserCreate, db: AsyncSession = Depends(get_db)):
     if db_user:
         raise HTTPException(status_code=400, detail="用户名已存在")
     new_user = await create_user(db, user)
+
+    # 创建默认 Prompt
+    default_prompt = await create_prompt(
+        db,
+        prompt=PromptCreate(
+            content="""
+            请根据以下结构回答问题：\n \
+            1. 简要回应问题，明确目标和原则。\n \
+            2. 详细展开行动方案，每个要点不超过 3 行，逻辑清晰，层次分明。\n \
+            3. 引用相关政策或讲话作为支持性论据，不要显得刻意。\n \
+            4. 使用朴实流畅的语言，控制答案在 250-300 字范围内，时长约 3 分钟。 \n \
+            问题是：
+            """
+,
+            user_id=new_user.id,
+        )
+    )
+    
     return new_user
 
 # 用户登录
@@ -73,6 +92,10 @@ async def login(user: UserCreate, db: AsyncSession = Depends(get_db)):
     max_devices = settings.max_devices
     await add_token_to_device_list(db_user.id, token, max_devices)
 
+    # 查询用户的默认 Prompt（最新添加的）
+    prompts = await get_prompts_by_user(db, db_user.id, limit=1)
+    prompt_ids = [prompt.id for prompt in prompts]  # 提取所有 prompt 的 ID 列表
+
     user_info = {
         "user_id": db_user.id,
         "username": db_user.username,
@@ -80,10 +103,9 @@ async def login(user: UserCreate, db: AsyncSession = Depends(get_db)):
         "status": db_user.status,
         "model_quota": db_user.model_quota,
         "membership_type": db_user.membership_type,
-        "created_at": db_user.created_at,
-        "updated_at": db_user.updated_at,
+        "prompt_ids": prompt_ids,
     }
-
+    
     return {
         "access_token": token,
         "token_type": "bearer",

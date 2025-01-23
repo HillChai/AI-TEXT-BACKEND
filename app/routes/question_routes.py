@@ -37,7 +37,8 @@ async def get_questions_history(
     # 查询所有属于用户的记录
     all_questions = await get_questions_by_user(db, current_user.id)
     if not all_questions:
-        raise HTTPException(status_code=404, detail="No history found.")
+        # 如果没有历史记录，返回空列表
+        return []
 
     # 按日期分组问题
     grouped_data = {}

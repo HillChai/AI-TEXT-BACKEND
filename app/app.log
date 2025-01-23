@@ -836,3 +836,70 @@ WHERE questions_and_answers.user_id = %(user_id_1)s AND questions_and_answers.qu
 2025-01-22 14:10:04,650 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
 2025-01-22 15:27:13,244 - my_logger - INFO - FastAPI application started!
 2025-01-22 15:27:13,246 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-23 03:40:13,167 - my_logger - INFO - FastAPI application started!
+2025-01-23 03:40:13,168 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-23 06:24:45,381 - my_logger - INFO - FastAPI application started!
+2025-01-23 06:24:45,382 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-23 06:32:57,409 - my_logger - INFO - current user: 22
+2025-01-23 06:32:57,415 - my_logger - INFO - 检查是否有缓存
+2025-01-23 06:32:57,432 - my_logger - INFO - 没有记录
+2025-01-23 06:32:57,435 - my_logger - INFO - prompt_content: 
+请根据以下结构回答问题：
+1. 简要回应问题，明确目标和原则。
+2. 详细展开行动方案，每个要点不超过 3 行，逻辑清晰，层次分明。
+3. 引用相关政策或讲话作为支持性论据，不要显得刻意。
+4. 使用朴实流畅的语言，控制答案在 250-300 字范围内，时长约 3 分钟。
+问题是：
+
+2025-01-23 06:32:57,435 - my_logger - INFO - question_content: 为吸引青年人才来本地就业发展，某市打造多家青年驿站，为外地求职青年提供一周内免费住宿。为进一步提高青年驿站服务质量，团市委决定为入住者提供就业指导和城市融入等服务。假如由你负责，你怎么做？
+2025-01-23 06:33:03,958 - my_logger - ERROR - Failed to save record to database: 403: Insufficient model quota
+2025-01-23 06:58:29,907 - my_logger - INFO - FastAPI application started!
+2025-01-23 06:58:29,909 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-23 07:15:40,169 - my_logger - INFO - FastAPI application started!
+2025-01-23 07:15:40,169 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-23 07:28:37,865 - my_logger - INFO - FastAPI application started!
+2025-01-23 07:28:37,867 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-23 07:35:37,190 - my_logger - INFO - FastAPI application started!
+2025-01-23 07:35:37,192 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-23 07:37:29,962 - my_logger - INFO - current user: 22
+2025-01-23 07:37:29,965 - my_logger - INFO - 检查是否有缓存
+2025-01-23 07:37:29,970 - my_logger - INFO - 没有记录
+2025-01-23 07:37:29,972 - my_logger - INFO - prompt_content: 
+            请根据以下结构回答问题：
+             1. 简要回应问题，明确目标和原则。
+             2. 详细展开行动方案，每个要点不超过 3 行，逻辑清晰，层次分明。
+             3. 引用相关政策或讲话作为支持性论据，不要显得刻意。
+             4. 使用朴实流畅的语言，控制答案在 250-300 字范围内，时长约 3 分钟。 
+             问题是：
+            
+2025-01-23 07:37:29,972 - my_logger - INFO - question_content: 为吸引青年人才来本地就业发展，某市打造多家青年驿站，为外地求职青年提供一周内免费住宿。为进一步提高青年驿站服务质量，团市委决定为入住者提供就业指导和城市融入等服务。假如由你负责，你怎么做？
+2025-01-23 07:41:23,887 - my_logger - INFO - current user: 22
+2025-01-23 07:41:23,892 - my_logger - INFO - 检查是否有缓存
+2025-01-23 07:41:23,895 - my_logger - INFO - 找到记录: <models.Question object at 0xffff7d569ee0>
+2025-01-23 07:41:38,569 - my_logger - INFO - current user: 22
+2025-01-23 07:41:38,570 - my_logger - INFO - 检查是否有缓存
+2025-01-23 07:41:38,573 - my_logger - INFO - 没有记录
+2025-01-23 07:41:38,575 - my_logger - INFO - prompt_content: 
+            请根据以下结构回答问题：
+             1. 简要回应问题，明确目标和原则。
+             2. 详细展开行动方案，每个要点不超过 3 行，逻辑清晰，层次分明。
+             3. 引用相关政策或讲话作为支持性论据，不要显得刻意。
+             4. 使用朴实流畅的语言，控制答案在 250-300 字范围内，时长约 3 分钟。 
+             问题是：
+            
+2025-01-23 07:41:38,575 - my_logger - INFO - question_content: 数字经济是人类通过大数据的识别—选择—过滤—存储—使用，引导、实现资源的快速优化配置与再生，实现经济高质量发展的经济形态。在过去的一年里，数字经济取得了很大进步，对于上海将如何发展数字经济，请谈谈你的看法。
+2025-01-23 07:49:31,453 - my_logger - INFO - current user: 22
+2025-01-23 07:49:31,464 - my_logger - INFO - 检查是否有缓存
+2025-01-23 07:49:31,475 - my_logger - INFO - 没有记录
+2025-01-23 07:49:31,481 - my_logger - INFO - prompt_content: 
+            请根据以下结构回答问题：
+             1. 简要回应问题，明确目标和原则。
+             2. 详细展开行动方案，每个要点不超过 3 行，逻辑清晰，层次分明。
+             3. 引用相关政策或讲话作为支持性论据，不要显得刻意。
+             4. 使用朴实流畅的语言，控制答案在 250-300 字范围内，时长约 3 分钟。 
+             问题是：
+            
+2025-01-23 07:49:31,482 - my_logger - INFO - question_content: 一项燃气管道的施工项目建在了你们的社区附近，有居民反映说离小区太近，会威胁社区内几千名居民生命财产安全。领导让你来处理此事，你会怎么保障施工的顺利完成？
+2025-01-23 07:49:54,372 - my_logger - INFO - current user: 22
+2025-01-23 07:49:54,374 - my_logger - INFO - 检查是否有缓存
+2025-01-23 07:49:54,376 - my_logger - INFO - 找到记录: <models.Question object at 0xffff7d441790>

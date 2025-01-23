@@ -25,7 +25,11 @@ async def get_prompt_by_id(db: AsyncSession, prompt_id: int):
 # 获取用户的所有提示
 async def get_prompts_by_user(db: AsyncSession, user_id: int, skip: int = 0, limit: int = 10):
     result = await db.execute(
-        select(Prompt).where(Prompt.user_id == user_id).offset(skip).limit(limit)
+        select(Prompt)
+        .where(Prompt.user_id == user_id)
+        .order_by(Prompt.created_at.desc())  # 按创建时间降序排序
+        .offset(skip)
+        .limit(limit)
     )
     return result.scalars().all()
 
