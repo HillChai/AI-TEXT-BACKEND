@@ -903,3 +903,30 @@ WHERE questions_and_answers.user_id = %(user_id_1)s AND questions_and_answers.qu
 2025-01-23 07:49:54,372 - my_logger - INFO - current user: 22
 2025-01-23 07:49:54,374 - my_logger - INFO - 检查是否有缓存
 2025-01-23 07:49:54,376 - my_logger - INFO - 找到记录: <models.Question object at 0xffff7d441790>
+2025-01-23 07:56:03,289 - my_logger - INFO - FastAPI application started!
+2025-01-23 07:56:03,291 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-23 08:30:29,021 - my_logger - INFO - FastAPI application started!
+2025-01-23 08:30:29,022 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-23 08:35:28,772 - my_logger - INFO - FastAPI application started!
+2025-01-23 08:35:28,774 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-01-23 08:40:33,508 - my_logger - INFO - FastAPI application started!
+2025-01-23 08:40:33,509 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-02-06 08:25:16,082 - my_logger - INFO - FastAPI application started!
+2025-02-06 08:25:16,082 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-02-06 08:41:56,800 - my_logger - INFO - FastAPI application started!
+2025-02-06 08:41:56,829 - my_logger - INFO - Access admin panel at: http://127.0.0.1:8000/admin
+2025-02-06 08:44:22,461 - my_logger - INFO - current user: 24
+2025-02-06 08:44:22,464 - my_logger - INFO - 检查是否有缓存
+2025-02-06 08:44:22,473 - my_logger - INFO - 没有记录
+2025-02-06 08:44:22,474 - my_logger - INFO - prompt_content: 
+            请根据以下结构回答问题：
+             1. 简要回应问题，明确目标和原则。
+             2. 详细展开行动方案，每个要点不超过 3 行，逻辑清晰，层次分明。
+             3. 引用相关政策或讲话作为支持性论据，不要显得刻意。
+             4. 使用朴实流畅的语言，控制答案在 250-300 字范围内，时长约 3 分钟。 
+             问题是：
+            
+2025-02-06 08:44:22,474 - my_logger - INFO - question_content: 为吸引青年人才来本地就业发展，某市打造多家青年驿站，为外地求职青年提供一周内免费住宿。为进一步提高青年驿站服务质量，团市委决定为入住者提供就业指导和城市融入等服务。假如由你负责，你怎么做？
+2025-02-06 08:45:14,029 - my_logger - INFO - current user: 24
+2025-02-06 08:45:14,033 - my_logger - INFO - 检查是否有缓存
+2025-02-06 08:45:14,036 - my_logger - INFO - 找到记录: <models.Question object at 0xffff85c08b50>

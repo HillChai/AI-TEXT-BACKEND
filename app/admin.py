@@ -1,10 +1,12 @@
 from sqladmin import Admin, ModelView
 from sqladmin.authentication import AuthenticationBackend
 from fastapi import Request, HTTPException
+from sqlalchemy.future import select
 from models import User, Prompt, UserPrompt  # 修改为实际的模型导入路径
 from database import engine
 from fastapi import FastAPI
 from config import settings
+from sqlalchemy.ext.asyncio import AsyncSession
 
 class AdminAuth(AuthenticationBackend):
     async def login(self, request: Request) -> bool:
@@ -33,29 +35,29 @@ class AdminAuth(AuthenticationBackend):
 
 
 # 示例模型
-class UserPromptAdmin(ModelView, model=UserPrompt):
-    column_list = [
-        UserPrompt.id,
-        UserPrompt.user_id,
-        UserPrompt.prompt_id,
-    ]
+# class UserPromptAdmin(ModelView, model=UserPrompt):
+#     column_list = [
+#         UserPrompt.id,
+#         UserPrompt.user_id,
+#         UserPrompt.prompt_id,
+#     ]
 
-    # 可搜索字段
-    searchable_columns = [User.id, Prompt.content]
+#     # 可搜索字段
+#     searchable_columns = [User.id, Prompt.content]
 
-    # 定义外键字段的显示
-    form_columns = ["user_id", "prompt_id", "status", "usage_count"]
+#     # 定义外键字段的显示
+#     form_columns = ["user_id", "prompt_id", "status", "usage_count"]
 
-    def format_user_id(self, obj):
-        return f"{obj.user.username} (ID: {obj.user_id})"
+#     def format_user_id(self, obj):
+#         return f"{obj.user.username} (ID: {obj.user_id})"
 
-    def format_prompt_id(self, obj):
-        return f"{obj.prompt.content} (ID: {obj.prompt_id})"
+#     def format_prompt_id(self, obj):
+#         return f"{obj.prompt.content} (ID: {obj.prompt_id})"
 
-    column_formatters = {
-        "user_id": format_user_id,
-        "prompt_id": format_prompt_id,
-    }
+#     column_formatters = {
+#         "user_id": format_user_id,
+#         "prompt_id": format_prompt_id,
+#     }
 
 # 初始化管理面板
 def create_admin(app: FastAPI):
@@ -70,8 +72,8 @@ def create_admin(app: FastAPI):
 
     class PromptAdmin(ModelView, model=Prompt):
         column_list = [Prompt.id, Prompt.content, Prompt.user_id]
-
-    # 注册视图
+        searchable_columns = [Prompt.user_id]
+        
     admin.add_view(UserAdmin)
     admin.add_view(PromptAdmin)
     # admin.add_view(UserPromptAdmin)  # 注册 UserPrompt 视图

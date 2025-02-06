@@ -25,7 +25,8 @@ async def create_user(db: AsyncSession, user: UserCreate):
         password_hash=hash_password(user.password),  # 使用哈希密码
         user_type=user.user_type,
         status=user.status,
-        model_quota=user.model_quota,
+        model_quota=10,
+        membership_type='basic',
     )
     db.add(db_user)
     await db.commit()  # 异步提交

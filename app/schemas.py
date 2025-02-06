@@ -19,7 +19,7 @@ class UserUpdate(BaseModel):
     user_type: Optional[str]
     status: Optional[str]
     model_quota: Optional[int]
-    membership_type: Optional[str] = None
+    membership_type: Optional[str] = 'basic'
 
 class UserResponse(UserBase):
     id: int
