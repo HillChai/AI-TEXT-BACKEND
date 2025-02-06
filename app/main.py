@@ -43,7 +43,7 @@ origins = [
 # 添加跨域中间件
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,  # 替换为前端的真实地址
+    allow_origins=["*"],  # 替换为前端的真实地址
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
